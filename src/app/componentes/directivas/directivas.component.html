@@ -1,0 +1,16 @@
+<section class="lista">
+    <h1>{{titulo | uppercase}}</h1>
+<ul>
+    <li *ngFor="let estudiante of listaEstudiantes" [ngClass]="estudiante.estaActivo ? 'activo' : 'inactivo'">
+        {{ estudiante.nombre }} {{estudiante.apellido | uppercase}}
+        <button *ngIf="estudiante.estaActivo == false">ACTIVAR</button>
+    </li>
+</ul>
+</section>
+<!-- <h1>{{titulo | uppercase}}</h1>
+<ul>
+    <li *ngFor="let estudiante of listaEstudiantes" [ngClass]="estudiante.estaActivo ? 'activo' : 'inactivo'">
+        {{ estudiante.nombre }} {{estudiante.apellido | uppercase}}
+        <button *ngIf="estudiante.estaActivo == false">ACTIVAR</button>
+    </li>
+</ul> -->

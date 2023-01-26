@@ -1,0 +1,27 @@
+ul{
+    list-style: none;
+    margin-left: 10px;
+}
+li{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.activo{
+    
+    font-size: larger;
+    color: rgb(46, 210, 51);
+}
+.inactivo{
+    color: rgb(255, 0, 68);
+    font-size: larger;
+}
+.lista{
+    background-color: antiquewhite;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 30px;
+}
